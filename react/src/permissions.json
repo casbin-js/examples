@@ -1,0 +1,12 @@
+{
+    "alice": {
+        "read": ["alice_data"]
+    },
+    "bob": {
+        "read": ["bob_data"]
+    },
+    "admin": {
+        "read": ["alice_data", "bob_data"],
+        "write": ["alice_data", "bob_data"]
+    }
+}
