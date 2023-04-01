@@ -7,7 +7,7 @@ You can install and run the project on your laptop and see how magically Casbin.
 ### Guide
 Installation
 ```
-npn install
+npm install
 npm run start
 ```
 Then visit `localhost:3000` and have a try.
