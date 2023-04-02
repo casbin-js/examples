@@ -5,10 +5,18 @@ In this example, we will illustrate the fundamental usage of Casbin.js in a Reac
 You can install and run the project on your laptop and see how magically Casbin.js facilitate your access-control management!
 
 ### Guide
-Installation
+
+Install:
+
 ```
 npm install
+```
+
+Run:
+
+```
 npm run start
 ```
-Then visit `localhost:3000` and have a try.
+
+Then visit `http://localhost:3000` and have a try.
 
