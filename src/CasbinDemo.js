@@ -23,7 +23,7 @@ export default class CasbinDemo extends React.Component {
       <div>
         <p>====</p>
         { this.auth.permission.check('read', 'alice_data') && AliceDiv }
-        { this.auth.permission.check("read", "bob_data") && BobDiv }
+        { this.auth.permission.check('read', 'bob_data') && BobDiv }
         <p>====</p>
       </div>
     )
