@@ -1,11 +1,11 @@
-import React, {PureComponent} from 'react';
+import React from 'react';
 import {Authorizer} from 'casbin.js';
 import permissions from './permissions.json'
 
 
 // CasbinDemo requires a `user` params in props and update its internal state.
 // Use PureComponent to avoid multiple re-renders.
-export default class CasbinDemo extends PureComponent {
+export default class CasbinDemo extends React.Component {
   constructor(props) {
     super(props);
     this.auth = new Authorizer("manual");
@@ -22,8 +22,8 @@ export default class CasbinDemo extends PureComponent {
     return (
       <div>
         <p>====</p>
-        { this.auth.can('read', 'alice_data') && AliceDiv }
-        { this.auth.can('read', 'bob_data') && BobDiv }
+        { this.auth.permission.check('read', 'alice_data') && AliceDiv }
+        { this.auth.permission.check('read', 'bob_data') && BobDiv }
         <p>====</p>
       </div>
     )
